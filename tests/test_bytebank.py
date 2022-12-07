@@ -21,3 +21,14 @@ class TestClass:
 
         assert resultado == esperado
 
+    def test_quando_decrescimo_salario_recebe_100000_deve_retornar_90000(self):
+        entrada = 100000
+        esperado = 90000
+
+        funcionario_teste = Funcionario('Test', '11/11/2000', entrada)
+        funcionario_teste.decrescimo_salario()
+        resultado = funcionario_teste.salario
+
+        assert resultado == esperado
+
+
